@@ -341,7 +341,7 @@ const keys = ["Sistemas web", "Aplicativos", "APIs", "Integrações", "SaaS", "A
 const WHATSAPP = "https://wa.me/5582982051109?text=" + encodeURIComponent("Olá! Gostaria de falar com a Kunlatek sobre um projeto.");
 const products = [
   { name: "Kunlatalk", logo: "kunlatalk", url: "https://kunlatalk.com.br/", d: "Atendentes de IA com a identidade da sua marca. Vendem, atendem e fidelizam pelo WhatsApp, 24 horas por dia." },
-  { name: "Mezuri", logo: "mezuri", url: null, soon: true, d: "Novo produto da Kunlatek. Em breve por aqui." },
+  { name: "Mezuri", logo: "mezuri", url: null, soon: true, d: "Plataforma de gestão para escritórios de arquitetura. Projetos, tarefas, prazos e responsabilidades em um só lugar." },
 ];
 
 export default function KunlatekLanding() {
@@ -555,7 +555,7 @@ export default function KunlatekLanding() {
                 <article key={p.name} className={`kl-prod reveal${p.soon ? " soon" : ""}`} style={{ "--d": `${i * 90}ms` }}>
                   {p.soon && <span className="kl-prod-tag">Em breve</span>}
                   <div className="kl-prod-logo">
-                    {p.logo === "kunlatalk" ? <KunlatalkLogo height={34} /> : p.logo === "mezuri" ? <MezuriLogo height={48} /> : <span className="kl-prod-name">{p.name}</span>}
+                    {p.logo === "kunlatalk" ? <KunlatalkLogo height={34} /> : p.logo === "mezuri" ? <MezuriLogo height={62} /> : <span className="kl-prod-name">{p.name}</span>}
                   </div>
                   <p>{p.d}</p>
                   {p.url && (
